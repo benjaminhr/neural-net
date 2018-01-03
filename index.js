@@ -6,10 +6,10 @@ const SPLIT = 99
 const trainingData = data.slice(0, SPLIT)
 const testData = data.slice(SPLIT + 1)
 
-const net = brain.NeuralNetwork({
+const net = new brain.NeuralNetwork({
   activation: 'sigmoid',
   hiddenLayers: [5],
-  iterations: 500,
+  iterations: 100,
   learningRate: 0.5,
 })
 
