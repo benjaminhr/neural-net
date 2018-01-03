@@ -1,5 +1,5 @@
 // Fisher-Yates shuffle
-var shuffle = function(array) {
+const shuffle = function(array) {
     let counter = array.length;
 
     // While there are elements in the array

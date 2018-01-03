@@ -1,4 +1,4 @@
-import { shuffle } from './shuffle';
+const shuffle = require('./shuffle').shuffle
 
 // Iris dataset
 // features: SepalLengthCm, SepalWidthCm, PetalLengthCm, PetalWidthCm
@@ -50,5 +50,4 @@ const orderedData = samples.map((array, index) => {
 })
 
 const shuffledData = shuffle(orderedData)
-
 exports.data = shuffledData
