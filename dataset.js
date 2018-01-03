@@ -40,3 +40,15 @@ const labels = [[1,0,0],[1,0,0],[1,0,0],[1,0,0],[1,0,0],[1,0,0],[1,0,0],[1,0,0],
 [0,0,1],[0,0,1],[0,0,1],[0,0,1],[0,0,1],[0,0,1],[0,0,1],[0,0,1],[0,0,1],[0,0,1],[0,0,1],[0,0,1],
 [0,0,1],[0,0,1],[0,0,1],[0,0,1],[0,0,1],[0,0,1],[0,0,1],[0,0,1],[0,0,1],[0,0,1],[0,0,1],[0,0,1],
 [0,0,1],[0,0,1],[0,0,1],[0,0,1],[0,0,1],[0,0,1],[0,0,1]];
+
+// brain.js requires objects
+const orderedData = samples.map((array, index) => {
+  return {
+    input: array,
+    output: labels[index]
+  }
+})
+
+const shuffledData = shuffle(orderedData)
+
+exports.data = shuffledData
