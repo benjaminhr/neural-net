@@ -9,7 +9,7 @@ const getAccuracy = function(net, testData) {
   });
 
   // total average accuracy from test data
-  return correct / testData.length;  
+  return correct / testData.length;
 }
 
 exports.getAccuracy = getAccuracy
